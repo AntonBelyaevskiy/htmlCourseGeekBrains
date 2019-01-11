@@ -28,6 +28,12 @@ header > ul > li > a:hover{
     color: #FF0065;
 }
 
+.foto{
+    border: 1px #FF0065 solid;
+    width: 200px;
+    height: 200px;
+}
+
 .item{
     border: 1px solid #FF0065;
     padding: 10px;
