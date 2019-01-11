@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Суши от Кутуши: доставка суши и роллов</title>
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!--вставил карту по другому, не так как Вы показывали, чтобы была возможность использовать свой значок пина на карте-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            f1;
+			
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [52.516506, 103.880339],
+                zoom: 15
+            }); 
+            
+            f1 = new ymaps.Placemark([52.516633, 103.880972], {
+                hintContent: 'вход с главной стороны здания'
+            }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/pin.png',
+            iconImageSize: [75, 65],
+        });          
+            myMap.geoObjects.add(f1);
+
+        }
+    </script>
+</head>
+<body>
+    <p>Название магазина</p>
+    <header>
+        <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="catalog.html">каталог</a></li>
+            <li><a href="#">доставка</a></li>
+            <li><a href="contact.html">контакты</a></li>
+        </ul>
+    </header>
+    <hr>
+    <div>
+        <h2>Обратная связь</h2>
+        <form>
+            <fieldset>
+                <legend>Отправить нам сообщение</legend>
+                <input type="text" size="30" placeholder="Ваше имя"><br>
+                <input type="text" size="30" placeholder="Ваш электронный адрес"><br>
+                <label>текст вашего сообщения</label><br>
+                <textarea rows="15" cols="70"></textarea><br>
+                <input type="button" value="отправить">
+            </fieldset>
+        </form>
+        <h2>Адрес</h2>
+        <ul>
+            <li><b>время доставки: </b> круглосуточно</li>
+            <li><b>телефон: </b> 555-555</li>
+            <li><b>инстаграм: </b> <a href="#">@instagram</a></li>
+            <li><b>адрес: </b> верхняя набережная</li>
+        </ul>
+        <div id="map" style="height: 350px"></div>
+    </div>
+    <hr>
+    <footer>
+        <p><script>document.write(new Date().getFullYear());</script> &copy; Все права защищены.</p>
+    </footer>
+</body>
+</html>
