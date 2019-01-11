@@ -7,28 +7,8 @@
 
     <!--вставил карту по другому, не так как Вы показывали, чтобы была возможность использовать свой значок пина на карте-->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script type="text/javascript">
-        ymaps.ready(init);
-        var myMap, 
-            f1;
-			
-        function init(){ 
-            myMap = new ymaps.Map("map", {
-                center: [52.516506, 103.880339],
-                zoom: 15
-            }); 
-            
-            f1 = new ymaps.Placemark([52.516633, 103.880972], {
-                hintContent: 'вход с главной стороны здания'
-            }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/pin.png',
-            iconImageSize: [75, 65],
-        });          
-            myMap.geoObjects.add(f1);
+    <script src="js/map.js" type="text/javascript"></script>
 
-        }
-    </script>
 </head>
 <body>
     <p>Название магазина</p>
