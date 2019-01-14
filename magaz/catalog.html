@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Суши от Кутуши: доставка суши и роллов</title>
     <link rel="shortcut icon" href="img/fav.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <p>Название магазина</p>
@@ -11,32 +12,35 @@
         <ul>
             <li><a href="index.html">главная</a></li>
             <li><a href="catalog.html">каталог</a></li>
-            <li><a href="#">доставка</a></li>
+            <li><a href="delivery.html">доставка</a></li>
             <li><a href="contact.html">контакты</a></li>
         </ul>
     </header>
     <hr>
     <div>
-        <h2>наше меню:</h2>
+        <h2>меню</h2>
+        <div class="item">
         <img src="img/rolls/ca.jpg"
              alt="калифорния ролл"
              title="калифорния ролл"
              width="200"
-             height="200"
-             style="border: 1px black solid">
-        <p><a href="item.html">калифорния ролл</a></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        
+             height="200">
+        <a href="item.html">калифорния ролл</a>
+        <p class="menu_item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>в корзину</button>
+        </div>
+        <div class="item">
         <img src="img/rolls/fi.png"
              alt="филадельфия ролл"
              title="филадельфия ролл"
              width="200"
-             height="200"
-             style="border: 1px black solid">
-        <p><a href="#">филадельфия ролл</a></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             height="200">
+        <a href="item.html">филадельфия ролл</a>
+        <p class="menu_item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>в корзину</button>
+        </div>
     </div>
-    <hr>
+    <hr style="clear: left">
     <footer>
         <p><script>document.write(new Date().getFullYear());</script> &copy; Все права защищены.</p>
     </footer>
