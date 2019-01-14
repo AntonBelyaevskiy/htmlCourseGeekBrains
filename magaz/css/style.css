@@ -200,3 +200,7 @@ footer{
     text-align: center;
     padding-top: 5px;
 }
+
+.clear{
+    clear: left;
+}
