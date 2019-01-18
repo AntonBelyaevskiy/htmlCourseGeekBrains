@@ -9,7 +9,7 @@ a{
 }
 
 a:hover{
-    color: #FF0065;
+    color: #f57836;
 }
 
 header > ul > li{
@@ -25,17 +25,27 @@ header > ul > li > a{
 }
 
 header > ul > li > a:hover{
-    color: #FF0065;
+    color: #f57836;
+    font-weight: bold;
 }
 
 .foto{
-    border: 1px #FF0065 solid;
+    border: 1px #f57836 solid;
     width: 200px;
     height: 200px;
 }
 
+.foto:hover{
+    border: none;
+    padding: 1px;
+}
+
+.logo{
+    width: 150px;
+}
+
 .item{
-    border: 1px solid #FF0065;
+    border: 1px solid #f57836;
     padding: 10px;
     width: 15%;
     margin: 10px;
@@ -59,7 +69,7 @@ header > ul > li > a:hover{
 
 .item_description{
     color: #484343;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -84,7 +94,7 @@ header > ul > li > a:hover{
     position: absolute;
     width: 8px;
     height: 8px;
-    border: 2px solid #FF0065;
+    border: 2px solid #f57836;
     background: #f8f8f8;
     top: 9px;
     left: 0;
@@ -99,22 +109,33 @@ form input[type="text"]{
     font-size: 18px;
 }
 
+form input[type="text"]:focus{
+    background: #f57836;
+    border: 1px solid black;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+textarea{
+    text-transform: capitalize;
+}
+
 form input[type="button"]{
     cursor: pointer;
     margin: 5px;
     height: 30px;
-    color: #FF0065;
+    color: #f57836;
     font-size: 16px;
 }
 
 input::-moz-placeholder {
-    color:  #FF0065;
+    color:  #f57836;
     font-size: 14px;
     opacity: 0.5;
     padding: 3px;
 }
 input::-webkit-input-placeholder {
-    color:  #FF0065;
+    color:  #f57836;
     font-size: 14px;
     opacity: 0.5;
     padding: 3px;
@@ -122,4 +143,64 @@ input::-webkit-input-placeholder {
 
 .message{
     width: 40%;
+}
+
+table{
+    border: 3px solid black;
+    margin: 0 5px 10px 5px;
+    border-spacing: 8px;
+}
+
+td{
+    border: 1px solid #f57836;
+    text-align: center;
+}
+
+.f_letter::first-letter{
+    font-family: Cambria, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    color: #f57836;
+}
+
+.item_table{
+    border: 1px dotted #f57836;
+    border-spacing: 0;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.item_table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.item_table_body tr:first-child{
+    line-height: 50px;
+    color: crimson;
+    font-weight: bolder;
+}
+
+.item_table th{
+    border: 1px solid black;
+    color: #f57836;
+    font-variant: small-caps;
+}
+
+caption{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+footer{
+    background: #707070;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.clear{
+    clear: left;
 }
