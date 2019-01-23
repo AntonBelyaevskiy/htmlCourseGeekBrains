@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Суши от Кутуши: доставка суши и роллов</title>
-    <link rel="shortcut icon" href="img/fav.png">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <img class="logo" src="img/logo.png" alt="суши от кутуши">
-        <ul>
-            <li><a href="index.html">главная</a></li>
-            <li><a href="catalog.html">каталог</a></li>
-            <li><a href="delivery.html">доставка</a></li>
-            <li><a href="contact.html">контакты</a></li>
-        </ul>
-    </header>
-    <hr>
-    <div>
-        <div class="message">
-        <h2>Обратная связь</h2>
-        <form>
-            <fieldset>
-                <legend>Отправить нам сообщение</legend>
-                <input type="text" name="name" size="30" placeholder="Ваше имя"><br>
-                <input type="text" name="email" size="30" placeholder="Ваш электронный адрес"><br>
-                <label>текст вашего сообщения</label><br>
-                <textarea name="message" rows="15" cols="70"></textarea><br>
-                <input type="button" value="отправить">
-            </fieldset>
-        </form>
+    <head>
+        <meta charset="UTF-8">
+        <title>Суши от Кутуши: доставка суши и роллов</title>
+        <link rel="shortcut icon" href="img/fav.png">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div  class="container">
+            <header>
+                <img class="logo" src="img/logo.png" alt="суши от кутуши">
+                <ul>
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="catalog.html">каталог</a></li>
+                    <li><a href="delivery.html">доставка</a></li>
+                    <li><a href="contact.html">контакты</a></li>
+                </ul>
+            </header>
+            <hr>
+            <div>
+                <div>
+                    <form>
+                        <fieldset class="message">
+                            <legend>Отправить нам сообщение</legend>
+                            <input type="text" name="name" size="30" placeholder="Ваше имя"><br>
+                            <input type="text" name="email" size="30" placeholder="Ваш электронный адрес"><br>
+                            <label>текст вашего сообщения</label><br>
+                            <textarea name="message" rows="15" cols="70"></textarea><br>
+                            <input type="button" value="отправить">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="address">
+                    <ul class="unordered-list">
+                        <li><b>время доставки: </b> круглосуточно</li>
+                        <li><b>телефон: </b> 555-555</li>
+                        <li><b>инстаграм: </b> <a href="#">@instagram</a></li>
+                        <li><b>адрес: </b> верхняя набережная</li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+            <hr>
+            <footer>
+                <p><script>document.write(new Date().getFullYear());</script> &copy; Все права защищены.</p>
+            </footer>
         </div>
-        <div>
-        <h2>Адрес</h2>
-        <ul class="unordered-list">
-            <li><b>время доставки: </b> круглосуточно</li>
-            <li><b>телефон: </b> 555-555</li>
-            <li><b>инстаграм: </b> <a href="#">@instagram</a></li>
-            <li><b>адрес: </b> верхняя набережная</li>
-        </ul>
-        </div>
-        <div id="map" style="height: 350px"></div>
-    </div>
-    <hr>
-    <footer>
-        <p><script>document.write(new Date().getFullYear());</script> &copy; Все права защищены.</p>
-    </footer>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/map.js"></script>
-</body>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="js/map.js"></script>
+    </body>
 </html>
